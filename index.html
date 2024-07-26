@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link href="styles.css" rel="Stylesheet">
+  </head>
+ <body>
+   <div class="container">
+     <header class="header">
+       <h1 id="title" class="text-center">Survey Form for Cities you travel</h1>
+        <p id="description" class="description">Thank you taking your time and share your travel experience with us</p>
+     </header>
+  </div>
+   <form id="survey-form" >
+  
+      <fieldset>
+        
+        <label id="name-label">Name:  <input id="name" type="text" placeholder="Enter your name" required></label>
+      <label id="email-label">Email: <input id="email" type="email" placeholder="Enter your email" required></label>
+      <label id="number-label">Age: <input id="number" type="number" min="10" max="90" placeholder="Enter your age"required></label>
+      
+      <label>Country type (required)</label>
+      <label><input type="radio" id="national-country" name="country-type" class="inline"  value="national-country"checked>National</label>
+      <label><input type="radio" id="international-country" name="country-type" class="inline"  value="international-country"checked>International </label>        
+      
+        <label>Which country you like the most?</label>
+        <select id="dropdown" name="dropdown">
+          <option value="">(Select one)</option>
+          <option value="1">London</option>
+          <option value="2">Kerala</option>
+          <option value="3">Paris</option>
+          <option value="4">Banglore</option>
+          <option value="5">Other</option>
+        </select>
+
+       <label>Activities planned during the travel include:</label>
+       <label><input type="checkbox" id="horse-riding" class="inline"
+value="horse-riding"  name="plan-activity">Horse Riding</label>
+        <label><input
+        id="driving" value="driving" type="checkbox" name="plan-activity" class="inline">Driving</label>
+         <label><input type="checkbox"
+         id="visit historical place" value="visit historical place" name="plan-activity" class="inline">Visit historical place</label>
+          
+     
+        <label for="about">About your favourite country?</label>
+        <textarea id="about" name="about" rows="4" cols="30" placeholder="All countries are beautiful."></textarea>
+      </fieldset>
+    <input type="Submit" value="submit" id="submit"/>
+   
+   </form>
+   
+   
+ </body>
+</html>
